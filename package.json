@@ -1,7 +1,7 @@
 {
   "name": "graphql-sample",
   "version": "1.0.0",
-  "description": "",
+  "description": "API for managing customer information like es host, api keys etc",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PRASAD2344/graphql-sample.git"
+    "url": "git+https://github.com/areddyraja/iot.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/PRASAD2344/graphql-sample/issues"
+    "url": "https://github.com/areddyraja/iot/issues"
   },
-  "homepage": "https://github.com/PRASAD2344/graphql-sample#readme",
+  "homepage": "https://github.com/areddyraja/iot#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
@@ -26,6 +26,9 @@
     "express": "^4.17.1",
     "express-graphql": "^0.12.0",
     "graphql": "^15.5.0",
-    "nodemon": "^2.0.7"
+    "graphql-tools": "^7.0.3",
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.7",
+    "sequelize": "^6.5.0"
   }
 }

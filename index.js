@@ -1,9 +1,16 @@
-import express from 'express';
+import express from 'express'
+import { schema } from './persistence/schema'
+import { graphqlHTTP } from 'express-graphql'
 
- const app = express();
+const app = express()
 
- app.get('/', (req, res) => {
-   res.send('Hi');
- });
+process.on('unhandledRejection', error => {
+  console.log(error.message);
+});
 
- app.listen(8080, () => console.log("Running on port 8080"))
+app.use('/graphql', graphqlHTTP({
+  schema: schema,
+  graphiql: true,
+}))
+
+app.listen(8282, () => console.log('Running on server port 8282'))
